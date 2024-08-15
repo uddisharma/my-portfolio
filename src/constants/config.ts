@@ -47,7 +47,7 @@ export const config: TConfig = {
   },
   hero: {
     name: 'Deepak Sharma',
-    p: ["I'm a Full Stack Developer", ''],
+    p: ["I'm a Full Stack Engineer", ''],
   },
   contact: {
     p: 'Get in touch',

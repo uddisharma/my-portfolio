@@ -23,8 +23,12 @@ const Hero = () => {
             {config.hero.p[0]} <br className="hidden sm:block" />
             {config.hero.p[1]}
           </p>
+         
+         
         </div>
+        
       </div>
+      
 
       <ComputersCanvas />
 

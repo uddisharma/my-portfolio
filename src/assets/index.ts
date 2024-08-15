@@ -32,6 +32,14 @@ import kafka from './tech/kafka.png';
 import cloudflare from './tech/cloudflare.png';
 import github1 from './tech/github.png';
 import aws from './tech/aws.png';
+import jest from './tech/jest.webp'
+import cypress from './tech/cypress.webp'
+import cicd from './tech/cicd.webp'
+import hono from './tech/hono.png'
+import turbo from './tech/turbo.svg'
+import jenkins from './tech/jenkins.png'
+import graphql from './tech/graphql.webp'
+import kubernetes from './tech/kubernatics.webp'
 
 import meta from './company/meta.png';
 import shopify from './company/shopify.png';
@@ -48,6 +56,8 @@ import object from './object.png';
 import google from './live.webp';
 import notesphere from './notesphere.png';
 import talksphere from './talksphere.png'
+import exchange from './exchange.png'
+import rydehub from './rydehub.png'
 
 export {
   logo,
@@ -94,5 +104,15 @@ export {
   object,
   google,
   notesphere,
-  talksphere
+  talksphere,
+  jest,
+  cypress,
+  cicd,
+  hono,
+  turbo,
+  jenkins,
+  graphql,
+  kubernetes,
+  exchange,
+  rydehub
 };

@@ -54,8 +54,9 @@ const About = () => {
       >
         {config.sections.about.content}
       </motion.p>
+      <a target='_blank' href='https://drive.google.com/file/d/1A6FmqvkaXEOI5lT0D5fRFKnpz3UjMid_/view?usp=sharing' className=' cursor-pointer mt-4 text-[#915eff]'>View Resume</a>
 
-      <div className="mt-20 flex flex-wrap gap-10 max-sm:justify-center">
+      <div className="mt-20 grid grid-cols-1 lg:grid-cols-4 gap-10 max-sm:justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

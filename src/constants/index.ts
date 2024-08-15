@@ -40,7 +40,17 @@ import {
   cloudflare,
   aws,
   notesphere,
-  talksphere
+  talksphere,
+  // jest,
+  cypress,
+  cicd,
+  hono,
+  turbo,
+  jenkins,
+  graphql,
+  kubernetes,
+  exchange,
+  rydehub
 } from '../assets';
 
 export const navLinks: TNavLink[] = [
@@ -76,7 +86,7 @@ const services: TService[] = [
     icon: creator,
   },
   {
-    title: 'Generative AI (Learning)',
+    title: 'Testing',
     icon: mobile,
   },
 ];
@@ -105,6 +115,10 @@ const technologies: TTechnology[] = [
   {
     name: 'Next JS',
     icon: nextjs,
+  },
+  {
+    name: "TurboRepo",
+    icon: turbo
   },
   {
     name: 'Redux Toolkit',
@@ -136,27 +150,6 @@ const technologies: TTechnology[] = [
     icon: expressjs,
   },
   {
-    name: 'MongoDB',
-    icon: mongodb,
-  },
-  {
-    name: 'Mongoose',
-    icon: mongoose,
-  },
-  {
-    name: 'postgreSQL',
-    icon: postgres,
-  },
-  {
-    name: 'Prisma',
-    icon: prisma,
-  },
-
-  {
-    name: 'Docker',
-    icon: docker,
-  },
-  {
     name: 'Redis',
     icon: redis,
   },
@@ -165,6 +158,49 @@ const technologies: TTechnology[] = [
     icon: kafka,
   },
   {
+    name: 'MongoDB',
+    icon: mongodb,
+  },
+
+  {
+    name: 'postgreSQL',
+    icon: postgres,
+  },
+  {
+    name: 'Prisma',
+    icon: prisma,
+  },
+  {
+    name: 'Mongoose',
+    icon: mongoose,
+  },
+  {
+    name: 'Hono',
+    icon: hono
+  },
+
+  {
+    name: "GraphQL",
+    icon: graphql
+  },
+  {
+    name: 'Docker',
+    icon: docker,
+  },
+  {
+    name: 'CI CD Pipeline',
+    icon: cicd
+  },
+  {
+    name: "Jenkins",
+    icon: jenkins
+  },
+  {
+    name: 'kubernetes',
+    icon: kubernetes
+  },
+
+  {
     name: 'Cloudflare',
     icon: cloudflare,
   },
@@ -172,6 +208,16 @@ const technologies: TTechnology[] = [
     name: 'AWS',
     icon: aws,
   },
+  // {
+  //   name: 'Jest',
+  //   icon: jest
+  // },
+  {
+    name: "Jest & Cypress",
+    icon: cypress
+  },
+
+
 ];
 
 const experiences: TExperience[] = [
@@ -187,7 +233,7 @@ const experiences: TExperience[] = [
     ],
   },
   {
-    title: 'MERN Stack Developer',
+    title: 'Full Stack Engineer',
     companyName: 'Mits Digitech Pvt Ltd ( Panchkula )',
     icon: web,
     iconBg: '#383E56',
@@ -199,7 +245,7 @@ const experiences: TExperience[] = [
     ],
   },
   {
-    title: 'MERN Stack Developer',
+    title: 'Full Stack Engineer',
     companyName: '1Doc Healthcare Pvt Ltd ( Rohtak )',
     icon: web,
     iconBg: '#E6DEDD',
@@ -296,6 +342,50 @@ const projects: TProject[] = [
   },
 
   {
+    name: 'Crypto Exchange',
+    description:
+      'I developed a crypto exchange application using Binance API, allowing users to securely trade a wide range of cryptocurrencies. The platform features real-time market data and an intuitive user interface designed for both novice and experienced traders. With seamless API integration, the application ensures fast, reliable, and accurate execution of trades.',
+    tags: [
+      {
+        name: 'NextJS',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'TurboRepo',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'Vercel',
+        color: 'pink-text-gradient',
+      },
+
+    ],
+    image: exchange,
+    sourceCodeLink: 'https://github.com/uddisharma/exchange',
+    live: 'https://exchange-nine-blue.vercel.app/',
+  },
+  {
+    name: 'Rydehub',
+    description:
+      "I'm developing an Uber-like application using microservices architecture to enhance scalability. By breaking down features like user management, ride matching, driver app , location updater and payments into independent services, the app can efficiently handle high traffic, improve performance, and allow for seamless scaling and maintenance.",
+    tags: [
+      {
+        name: 'TurboRepo',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'Micro services',
+        color: 'green-text-gradient',
+      },
+
+
+    ],
+    image: rydehub,
+    sourceCodeLink: 'https://github.com/uddisharma/rydehub',
+    live: 'https://github.com/uddisharma/rydehub',
+  },
+
+  {
     name: 'MediumCart',
     description:
       'Developed a scalable  multivendor ecommerce platform, facilitating multiple sellers to showcase and sell their products. Implemented features including seller onboarding, product management, order processing, and payment integration. Utilized technologies such as Next.js and Node.js  ensuring a seamless shopping experience for customers and sellers',
@@ -375,7 +465,7 @@ const projects: TProject[] = [
   {
     name: 'HR Software',
     description:
-      'Designed and developed a  HR software solution to streamline HR processes, including employee management, payroll, leave management. Utilized technologies such as Next.js and Node.js, and MongoDB for the database, ensuring scalability and efficiency. Implemented features to automate repetitive tasks, improve data accuracy, and enhance overall HR management efficiency.',
+      'I developed a  HR software solution to streamline HR processes, including employee management, payroll, leave management. Utilized technologies such as Next.js and Node.js, and MongoDB for the database, ensuring scalability and efficiency. Implemented features to automate repetitive tasks, improve data accuracy, and enhance overall HR management efficiency.',
     tags: [
       {
         name: 'nextJs',
@@ -398,7 +488,7 @@ const projects: TProject[] = [
   {
     name: 'AI Chat-Bot',
     description:
-      'An AI Chat Bot is a tool that simulates human conversation through text interactions. It uses artificial intelligence (AI) modals to understand and respond to user inputs, providing information, answering questions.  Used in customer service, healthcare, education, and many other fields.',
+      'An AI Chat Bot is a tool that simulates human conversation through text interactions. It uses artificial intelligence (AI) modals of hugging face to understand and respond to user inputs, providing information, answering questions.  Used in customer service, healthcare, education, and many other fields. Also we can use it as a personal assistant.',
     tags: [
       {
         name: 'nextJs',
